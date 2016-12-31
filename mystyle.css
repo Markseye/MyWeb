@@ -3,6 +3,10 @@ h1 {
     width: 100px;
     border: 2px solid white;
     padding: 25px;
-    background: white
+    background: #c2acac;
+    border-radius: 20px;
+}
 
+a {
+		font-size: 20px;
 }
