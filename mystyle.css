@@ -1,12 +1,33 @@
+body {
+		background: url('image.jpg'), 50% 50% no-repeat;
+		background-image: url('image.jpg');
+		background-size: cover;
+		margin: 250px;
+}
+
 h1 {
-		vertical-align: center
-    width: 100px;
-    border: 2px solid white;
+    color: white;
+    width: 50%;
     padding: 25px;
     background: #c2acac;
     border-radius: 20px;
-}
+    margin: auto;
+  }
 
 a {
-		font-size: 20px;
+		font-size: 15px;
+		color: #3366ff;
+		text-decoration: none;
+}
+
+p {
+	text-align: right;
+}
+
+.linkedIn {
+	text-align: left;
+}
+
+.gitHub {
+	text-align: right;
 }
