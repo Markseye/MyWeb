@@ -1,8 +1,6 @@
 body {
-		background: url('image.jpg'), 50% 50% no-repeat;
-		background-image: url('image.jpg');
-		background-size: cover;
-		margin: 250px;
+		margin: 10px;
+		background: lightgray;
 }
 
 h1 {
@@ -18,6 +16,33 @@ a {
 		font-size: 15px;
 		color: #3366ff;
 		text-decoration: none;
+}
+
+#pane1body {
+		margin: 125px;
+}
+
+#container {
+		height: 1000px;
+}
+
+#pane1 {
+    background: url(image.jpg);
+    background-size: cover;
+    border-bottom-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom: 1px;
+    height: 50%;
+}
+
+#pane2 {
+    background: url(dock.jpg);
+    background-size: 100% 100%;
+    height: 50%;
+    border-top-color: grey;
+    border-style: solid;
+    border-width: 2px;
 }
 
 p {
