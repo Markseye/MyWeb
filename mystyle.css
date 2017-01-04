@@ -6,14 +6,16 @@ body {
 h1 {
     color: black;
     font-family: helvetica, arial, sans-serif;
-    width: 50%;
+    width: 30%;
     padding: 25px;
     background: white;
     border-radius: 20px;
     border: solid;
     border-width: 1px;
     margin: auto;
+    font-size: 24px;
     box-shadow: 5px 5px 10px black;
+    text-shadow: none;
 }
 
 a {
@@ -29,60 +31,61 @@ a {
 		border-radius: 20px;
 }
 
-#pane1body {
-		margin: 125px;
-		width: 100%;
+.pictext{
+	font-family: "Brush Script MT", helvetica, arial, sans-serif;
+	font-size: 36px;
+	text-align: center;
 }
 
-#pane1 {
-    background: url(image.jpg);
+.pane1body {
+		margin-top: 125px;
+		width: 100%;
+		position: fixed;
+}
+
+.pane1 {
+		background: url(image.jpg);
     background-size: cover;
     height: 50%;
-    display: flex;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-family: "Brush Script MT", helvetica, arial, sans-serif;
+    text-shadow: 3px 3px black, 2px 2px black, 2px 0 black, 2px -1px black;
 }
 
-#pane2 {
+.pane2 {
 		display: flex;
     height: 50%;
+    color: white;
+		text-align: center;
+		font-family: "Brush Script MT", helvetica, arial, sans-serif;
+		font-size: 36px;
+		text-shadow: 3px 3px black, 2px 2px black, 2px 0 black, 2px -1px black;
 }
 
-#pane2img1 {
+.pane2img1 {
 	width: 50%;
 	height: 100%;
 	border-style: solid;
 	border-width: 1px;
 	background: url(dock.jpg);
   background-size: 100% 100%;
-	text-align: center;
-	font-family: "Brush Script MT", helvetica, arial, sans-serif;
-	font-size: 36px;
 	border-bottom-left-radius: 20px;
+	margin: auto;
+	border-color: black;
 }
 
-#pane2img2 {
+.pane2img2 {
 	width: 50%;
 	height: 100%;
 	border-style: solid;
 	border-width: 1px;
 	background: url(greece.jpg);
   background-size: 100% 100%;
-  color: black;
-	text-align: center;
-	font-family: "Brush Script MT", helvetica, arial, sans-serif;
-	font-size: 36px;
   border-bottom-right-radius: 20px;
-}
-
-p {
-	text-align: right;
-}
-
-.linkedIn {
-	text-align: left;
-}
-
-.gitHub {
-	text-align: right;
+  margin: auto;
+  border-color: black;
 }
