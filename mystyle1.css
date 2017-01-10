@@ -38,31 +38,23 @@ h1 {
 }
 
 .pane2 {
-    height: initial;
-    float: right;
+	  height: 1500px;
+		display: inline-block;
+		float: right;
     width: 50%;
-    background: url(bg_images/image.jpg);
-    background-size: 100% 100%;
+		background: url(bg_images/image.jpg);
+  	background-size: 100% 100%;
 }
 
 .pane2box{
     position: relative;
-    height: inherit;
+    height: 90%;
     width: 80%;
     left: 10%;
+    top: 5%;
     text-align: center;
     background-color: white;
     border: black;
     border-style: solid;
-    border-radius: 7px;
-    border-color: #5f5b60;
-    margin-bottom: 75px;
-}
-
-.res_header_text {
-		color: white;
-		text-align: center;
-		font-family: "Brush Script MT", helvetica, arial, sans-serif;
-		font-size: 48px;
-		text-shadow: 3px 3px black, 2px 2px black, 2px 0 black, 2px -1px black;
+    overflow: scroll;
 }
