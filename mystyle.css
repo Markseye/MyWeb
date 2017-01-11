@@ -1,3 +1,7 @@
+html {
+	height: 100%;
+}
+
 a {
 	text-decoration: none;
 }
@@ -6,48 +10,49 @@ a:hover{
 	background-color: lightgrey;
 }
 
-h1 {
-	position: relative;
+body{
+	margin: 0px;
+	height: 100%;
+}
+
+@media (max-width: 800px) {
+  #container {
+    flex-direction: column;
+  }
 }
 
 #container {
-		position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-		display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-left: -5px;
+    display: flex;
+    flex-direction: row;
+    height: 100%
 }
 
 .pane1 {
-		position: fixed;
-		display: flex;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     height: 100%;
-		float: left;
     width: 50%;
-		float: left;
     color: #5f5b60;
-		text-align: center;
-		font-family: "Brush Script MT", helvetica, arial, sans-serif;
-		font-size: 36px;
+    text-align: center;
+    font-family: "Brush Script MT", helvetica, arial, sans-serif;
+    font-size: 36px;
 }
 
 .pane2 {
-    height: initial;
-    float: right;
+    height: 100%;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
     background: url(bg_images/image.jpg);
     background-size: 100% 100%;
 }
 
 .pane2box{
-    position: relative;
-    height: inherit;
+    height: initial;
     width: 80%;
     left: 10%;
     text-align: center;
@@ -61,7 +66,6 @@ h1 {
 
 .res_header_text {
 		color: white;
-		text-align: center;
 		font-family: "Brush Script MT", helvetica, arial, sans-serif;
 		font-size: 48px;
 		text-shadow: 3px 3px black, 2px 2px black, 2px 0 black, 2px -1px black;
