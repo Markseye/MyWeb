@@ -5,13 +5,41 @@
   <title>Mark Ioannidis</title>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 
+  <meta charset='utf-8' />
+  <title></title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
-<div id = "header"></div>
-<div id = "top"></div>
+<!--<div id = "header"></div>-->
+<!--<div id = "top"></div>-->
 <div id = "container">
-	
+
+	<ul class = "topNav">
+		<li><a href="https://www.linkedin.com/in/mark-ioannidis-64b97230">LINKEDIN</a></li>
+		<li><a href="https://github.com/Markseye">GITHUB</a></li>
+	</ul>
+
+	<script type="text/javascript">
+	myID = document.getElementbyId("container");
+
+	var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 300) {
+    myID.className = "topNav show"
+  } else {
+    myID.className = "topNav hide"
+  }
+	};
+
+	window.addEventListener("scroll", myScrollFunc);
+	</script>
+
+  <script type="text/javascript" src="scripts/move.js"></script>
+  <script src="scripts/main.js"></script>
+
 	<div class = "pane1">
 		<h1> Hi, I'm Mark.</h1>
 		<a href="https://www.linkedin.com/in/mark-ioannidis-64b97230">
@@ -154,7 +182,12 @@
 
 </div>
 
-<script src="scripts/main.js"></script>
+<div class ="level2 setext">Currently @ StreetEasy
+
+<div id = "map"></div>
+
+<script src="scripts/mapbox.js"></script>
+</div>
 
 </body>
 
