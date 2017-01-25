@@ -63,6 +63,7 @@ li{
     width: 100%;
     padding: .7%;
     font-size: 24px;
+    opacity: 0;
 }
 
 .pane1 {
@@ -74,6 +75,9 @@ li{
     position: fixed;
     height: 100%;
     width: 50%;
+}
+
+.pane1Content{
     color: #5f5b60;
     text-align: center;
     font-family: "Brush Script MT", helvetica, arial, sans-serif;
