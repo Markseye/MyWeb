@@ -67,6 +67,7 @@ li{
     padding: .7%;
     font-size: 24px;
     opacity: 0;
+    z-index: 2;
 }
 
 .pane1 {
@@ -107,14 +108,8 @@ li{
     border-style: solid;
     border-radius: 7px;
     border-color: #5f5b60;
-    margin-bottom: 75px;
-}
-
-.res_header_text {
-	color: white;
-	font-family: "Brush Script MT", helvetica, arial, sans-serif;
-	font-size: 48px;
-	text-shadow: 3px 3px black, 2px 2px black, 2px 0 black, 2px -1px black;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .level2{

@@ -24,3 +24,5 @@ document.getElementsByClassName('pane1').onclick = function(e) {
     .set('opacity', 0)
     .end();
 };
+
+//add listener for if width is less to 900px to move panes to wrap
