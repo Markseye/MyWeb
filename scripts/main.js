@@ -28,12 +28,16 @@ var responsivePanes = function () {
 			move('.pane2')
 			.set('flex-direction', 'row')
 			.set('margin', 0)
-			.set('padding-left', '10%')
+			.set('justify-content', 'center')
+			.set('width', 'inherit')
 			.end();
 			move('.pane1')
 			.set('position', 'initial')
 			.set('width', '100%')
 			.set('height', '100vh')
+			.end();
+			move('.setext')
+			.set('padding-top', '10%')
 			.end();
 		}
 };
