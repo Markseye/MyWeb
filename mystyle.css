@@ -48,6 +48,11 @@ li{
     text-shadow: none;
 }
 
+#footer{
+    height: 5%;
+    border: solid darkgrey;
+}
+
 .topNav a{
     color:white;
 }
@@ -64,11 +69,6 @@ li{
     font-size: 24px;
     opacity: 0;
     z-index: 2;
-}
-
-.footer{
-    height: 5%;
-    border: solid darkgrey;
 }
 
 .pane1 {
