@@ -6,6 +6,10 @@ a {
 	text-decoration: none;
 }
 
+.topNav a{
+    display: block;
+}
+
 a:hover{
 	background-color: lightgrey;
 }
@@ -23,13 +27,17 @@ ul{
     list-style: none
 }
 
-li{
-    vertical-align: center;
+li.a{
+    height:100%;
 }
 
 #container {
     display: flex;
     flex-direction: row;
+}
+
+img{
+    vertical-align: middle;
 }
 
 #map {
@@ -54,12 +62,13 @@ li{
 }
 
 .topNav a{
-    color:white;
+    color: white;
 }
 
 .topNav{
     margin-top: 0px;
     text-align: center;
+    vertical-align: middle;
     display: flex;
     position: fixed;
     justify-content: space-around;
@@ -71,6 +80,10 @@ li{
     z-index: 2;
 }
 
+.logoBox {
+    display: flex;
+}
+
 .pane1 {
     display: flex;
     flex-flow: row wrap;
@@ -80,6 +93,10 @@ li{
     position: fixed;
     height: 100%;
     width: 50%;
+    /* full screen and row
+    height: 100vh;
+    position: initial;
+    */
 }
 
 .pane1Content{
@@ -98,6 +115,9 @@ li{
     background: url(bg_images/image.jpg);
     background-size: 100% 100%;
     margin-left: 50%;
+    /* full screen and row
+    margin-left: 0;
+    */
 }
 
 .pane2box{
