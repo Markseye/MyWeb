@@ -135,7 +135,7 @@ img{
 .pane1Content{
     color: #5f5b60;
     text-align: center;
-    font-family: "Brush Script MT", helvetica, arial, sans-serif;
+    font-family: "Brush Script MT", cursive, helvetica, arial, sans-serif;
     font-size: 36px;
     flex-flow: column wrap;
     margin-top: inherit;
