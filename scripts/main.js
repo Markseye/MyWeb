@@ -1,19 +1,26 @@
 var topNavScrollFunc = function () {
     var y = window.scrollY;
-    if (y >= 800) { 
+    if (y >= 500) { 
 			move('.topNav')
     	.set('opacity', 1)
+    	.set('display', 'flex')
     	.end();
+    	/* for split front page load
     	move('.pane1Content')
     	.set('opacity', 0)
-    	.end(); }
+    	.set('display', 'none')
+    	.end(); */
+    	}
     else {
     	move('.topNav')
     	.set('opacity', 0)
+    	.set('display', 'none')
     	.end();
+    	/* for split front page load
     	move('.pane1Content')
     	.set('opacity', 1)
-    	.end();
+    	.set('display', '')
+    	.end();  */
     }
 };
 

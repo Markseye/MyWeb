@@ -32,7 +32,7 @@ li.a{
 }
 
 #container {
-    display: flex;
+    /*display: flex;  for full screen pane*/
     flex-direction: row;
 }
 
@@ -80,28 +80,56 @@ img{
     z-index: 2;
 }
 
+.landingpic{
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    height: auto;
+    width: 25%;
+    flex-direction: row wrap;
+    min-height: 200px;
+    min-width: 300px;
+}
+    
+
 .pane1Text {
-    margin-bottom: 3%;
-    margin-top: 0%;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 4vmax;
 }
 
 .logoBox {
+    flex-flow: row;
+    vertical-align: top;
+    margin-bottom: 4%;
+    padding-left: 0;
     display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    /* margin-left: 35%; */
+    /* position: absolute; */
+    /* margin-top: 1%; */
+    text-align: center;
+}
+
+.logoBox li{
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .pane1 {
     display: flex;
-    flex-flow: row wrap;
     align-content: center;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    height: 100%;
-    width: 50%;
-    /* full screen and row
+    margin-top: inherit;
+    /*position: fixed;*/
+    /*height: 100%;*/
+    /*width: 50%;*/
+    /* full screen and row*/
     height: 100vh;
     position: initial;
-    */
+    
 }
 
 .pane1Content{
@@ -110,6 +138,7 @@ img{
     font-family: "Brush Script MT", helvetica, arial, sans-serif;
     font-size: 36px;
     flex-flow: column wrap;
+    margin-top: inherit;
 }
 
 .pane2 {
@@ -120,10 +149,10 @@ img{
     width:100%;
     background: url(bg_images/image.jpg);
     background-size: 100% 100%;
-    margin-left: 50%;
-    /* full screen and row
+    /* margin-left: 50%;*/
+    /* full screen and row*/
     margin-left: 0;
-    */
+    
 }
 
 .pane2box{
