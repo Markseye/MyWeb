@@ -3,7 +3,10 @@
 
 <head>
   <title>Mark Ioannidis</title>
+  <link rel="shortcut icon" href="favicon_ico.png" />
   <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript">google.load("jquery", "1.3.2");</script>
 
   <meta charset='utf-8' />
   <title></title>
@@ -13,8 +16,6 @@
 </head>
 
 <body>
-<!--<div id = "header"></div>-->
-<!--<div id = "top"></div>-->
 <div id = "container">
 
 	<ul class = "topNav">
@@ -25,7 +26,7 @@
   <script type="text/javascript" src="scripts/move.js"></script>
   <script src="scripts/main.js"></script>
 
-	<div class = "pane1 pane1Content">
+	<div id = "pane1" class = "pane1Content">
 
 		<ul class = "logoBox">
 			<li><a href="https://github.com/Markseye">
@@ -41,18 +42,10 @@
 
 		<img class = "landingpic" src="bg_images/fppic.jpg">
 		<h1 class = "pane1Text">Hi, I'm Mark.</h1>
-		<!-- Original Social Logo box
-		<div class = "logoBox">
-		<a href="https://www.linkedin.com/in/mark-ioannidis-64b97230">
-			<img src="social_icons/linkedin-black-logo.png">
-		</a>
-		<a href="https://github.com/Markseye">
-			<img src="social_icons/github-logo-120px.png">
-		</a>
-		</div>-->
+		<a href = "#pane2"><img class = "chevron" src="chevron_down.png"></a>
 	</div>
 
-	<div class = "pane2">
+	<div id = "pane2">
 		<div class = "pane2box"><body><h3 dir="ltr">
     Summary Of Qualifications
 </h3>
@@ -183,7 +176,7 @@
 
 </div>
 
-<div class ="level2">
+<div id ="pane3">
 
 	<h1 class = "setext"> Currently @ StreetEasy</h1>
 

@@ -43,4 +43,12 @@ var topNavScrollFunc = function () {
 
 window.addEventListener('scroll', topNavScrollFunc);
 
+$('chevron').click(function(){
+	console.log(window.self)
+	console.log(window.self)
+	if(window.top = window.self) {
+		$.scrollTo($('#pane2'), 500);
+	}	
+});
+
 //add listener for if width is less to 900px to move panes to wrap

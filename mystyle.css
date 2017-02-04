@@ -65,6 +65,22 @@ img{
     color: white;
 }
 
+.chevron{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    opacity: .25;
+    height: 50px;
+    width: 35px;
+    bottom: 0;
+}
+
+.chevron:hover{
+    opacity: 1;
+}
+
 .topNav{
     margin-top: 0px;
     text-align: center;
@@ -89,6 +105,8 @@ img{
     flex-direction: row wrap;
     min-height: 200px;
     min-width: 300px;
+    border:solid;
+    border-color: black;
 }
     
 
@@ -105,10 +123,6 @@ img{
     padding-left: 0;
     display: flex;
     justify-content: space-between;
-    /* width: 100%; */
-    /* margin-left: 35%; */
-    /* position: absolute; */
-    /* margin-top: 1%; */
     text-align: center;
 }
 
@@ -117,16 +131,12 @@ img{
     padding-left: 10px;
 }
 
-.pane1 {
+#pane1 {
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     margin-top: inherit;
-    /*position: fixed;*/
-    /*height: 100%;*/
-    /*width: 50%;*/
-    /* full screen and row*/
     height: 100vh;
     position: initial;
     
@@ -135,13 +145,13 @@ img{
 .pane1Content{
     color: #5f5b60;
     text-align: center;
-    font-family: "Brush Script MT", cursive, helvetica, arial, sans-serif;
+    font-family: "Brush Script MT", Cursive, helvetica, arial, sans-serif;
     font-size: 36px;
     flex-flow: column wrap;
     margin-top: inherit;
 }
 
-.pane2 {
+#pane2 {
     display: flex;
     overflow-y: scroll;
     flex-direction: column;
@@ -149,8 +159,6 @@ img{
     width:100%;
     background: url(bg_images/image.jpg);
     background-size: 100% 100%;
-    /* margin-left: 50%;*/
-    /* full screen and row*/
     margin-left: 0;
     
 }
@@ -168,7 +176,7 @@ img{
     margin-bottom: 3%;
 }
 
-.level2{
+#pane3{
     border-top: thick #fff;
 	height: 100%;
 	width: 100%;
@@ -190,13 +198,13 @@ img{
   #container {
     flex-direction: column;
   }
-  .pane2 {
+  #pane2 {
     flex-direction: row;
     margin: 0;
     justify-content: center;
     width: inherit;
   }
-  .pane1{
+  #pane1{
     position: initial;
     width: 100%;
     height: 100vh;
