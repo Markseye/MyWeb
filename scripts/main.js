@@ -43,9 +43,7 @@ var topNavScrollFunc = function () {
 
 window.addEventListener('scroll', topNavScrollFunc);
 
-$('chevron').click(function(){
-	console.log(window.self)
-	console.log(window.self)
+$('.chevron').click(function(){
 	if(window.top = window.self) {
 		$.scrollTo($('#pane2'), 500);
 	}	
