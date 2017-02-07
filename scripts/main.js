@@ -1,6 +1,6 @@
 var topNavScrollFunc = function () {
     var y = window.scrollY;
-    if (y >= 500) { 
+    if (y >= 0) { 
 			move('.topNav')
     	.set('opacity', 1)
     	.set('display', 'flex')
@@ -24,6 +24,23 @@ var topNavScrollFunc = function () {
     }
 };
 
+window.addEventListener('scroll', topNavScrollFunc);
+
+/*check for mobile view */
+
+window.onload = function() {
+if ((navigator.userAgent.match(/Android/i) != null && navigator.userAgent.match(/Android/i).length > 0) || (navigator.userAgent.match(/BlackBerry/i) != null && navigator.userAgent.match(/BlackBerry/i).length > 0) || (navigator.userAgent.match(/iPhone|iPad|iPod/i) != null && navigator.userAgent.match(/iPhone|iPad|iPod/i).length > 0) || (navigator.userAgent.match(/Opera Mini/i) != null && navigator.userAgent.match(/Opera Mini/i).length > 0) || (navigator.userAgent.match(/IEMobile/i) != null && navigator.userAgent.match(/IEMobile/i).length > 0)) {
+			move('.pane2Content')
+    	.set('font-size', '6vh')
+    	.end();
+    	move('.dataPaneContent')
+    	.set('font-size', '6vh')
+    	.end();
+    	move('.meetingPaneContent')
+    	.set('font-size', '6vh')
+    	.end();
+}};
+
 /*var topNavScrollFunc = function () {
     var y = window.scrollY;
     var tnav = document.getElementsByClassName("topNav")
@@ -41,12 +58,16 @@ var topNavScrollFunc = function () {
     }
 };*/
 
-window.addEventListener('scroll', topNavScrollFunc);
-
-$('.chevron').click(function(){
+/*$('.chevron').click(function(){
 	if(window.top = window.self) {
 		$.scrollTo($('#pane2'), 500);
 	}	
 });
+
+$("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".second").offset().top},
+        'slow');
+});*/
 
 //add listener for if width is less to 900px to move panes to wrap

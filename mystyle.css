@@ -11,6 +11,10 @@ a {
     color: white;
 }
 
+.topNav li{
+    margin-left: -3.5%;
+}
+
 a:hover{
 	background-color: lightgrey;
 }
@@ -45,6 +49,7 @@ footer{
     justify-content: center;
     background-color: #eee;
     display: flex;
+    padding-top: 3%;
 }
 
 #about {
@@ -118,7 +123,9 @@ footer{
     justify-content: space-around;
     background-color: black;
     width: 100%;
-    padding: .7%;
+    padding-left: 0;
+    padding-top: .7%;
+    padding-bottom: .7%;
     font-size: 24px;
     opacity: 0;
     z-index: 2;
@@ -199,6 +206,38 @@ footer{
     font-family: "Brush Script MT", Cursive, helvetica, arial, sans-serif;
     font-size: 10vh;
     margin-top: 50vh;
+}
+
+#dataPane {
+    display: flex;
+    width:100%;
+    background: url(bg_images/chart.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.dataPaneContent{
+    color: #5f5b60;
+    margin-left: 10%;
+    font-family: "Brush Script MT", Cursive, helvetica, arial, sans-serif;
+    font-size: 10vh;
+    margin-top: 20vh;
+}
+
+#meetingPane {
+    display: flex;
+    width:100%;
+    background: url(bg_images/meeting.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.meetingPaneContent{
+    color: white;
+    margin-left: 20%;
+    font-family: "Brush Script MT", Cursive, helvetica, arial, sans-serif;
+    font-size: 10vh;
+    margin-top: 10vh;
 }
 
 #pane3{
