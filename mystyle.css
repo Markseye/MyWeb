@@ -193,6 +193,22 @@ footer{
     margin-top: inherit;
 }
 
+.textTyping{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 10s steps(50, end);
+    animation: type 10s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
 #pane2 {
     display: flex;
     width:100%;
@@ -221,7 +237,7 @@ footer{
     margin-left: 10%;
     font-family: "Brush Script MT", Cursive, helvetica, arial, sans-serif;
     font-size: 10vh;
-    margin-top: 20vh;
+    margin-top: 18vh;
 }
 
 #meetingPane {
