@@ -7,6 +7,9 @@ var map = new mapboxgl.Map({
     zoom: 15 // starting zoom
 });
 
+//disable map zoom when scrolling
+map.scrollZoom.disable();
+
 
 
 /*var map = L.mapbox.map('map', 'markseye.2lf18h6c')
