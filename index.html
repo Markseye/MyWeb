@@ -20,9 +20,9 @@
 <div id = "container">
 
 	<ul class = "topNav">
-		<li><a href="https://www.linkedin.com/in/mark-ioannidis-64b97230"><img src="social_icons/linkedinnav.png"></a></li>
-		<li><a href="https://github.com/Markseye"><img src="social_icons/githubnav.png"></a></li>
-		<li><a class = "aboutLink" href="about.html">About</a></li>
+		<li class="topNavItem"><a href="https://www.linkedin.com/in/mark-ioannidis-64b97230"><img src="social_icons/linkedinnav.png"></a></li>
+		<li class="topNavItem"><a href="https://github.com/Markseye"><img src="social_icons/githubnav.png"></a></li>
+		<li class="topNavItem"><a class = "aboutLink" href="about.html">About</a></li>
 	</ul>
 
   <script type="text/javascript" src="scripts/move.js"></script>
@@ -31,13 +31,13 @@
 	<div id = "pane1" class = "pane1Content">
 
 		<ul class = "logoBox">
-			<li><a href="https://github.com/Markseye">
+			<li class="logoItem"><a href="https://github.com/Markseye">
 				<img src="social_icons/gitlogo.png">
 			</a></li>
-			<li><a href="mailto:mark.ioannidis@gmail.com">
+			<li class="logoItem"><a href="mailto:mark.ioannidis@gmail.com">
 				<img src="social_icons/gmail.png">
 			</a></li>
-			<li><a href="https://www.linkedin.com/in/mark-ioannidis-64b97230">
+			<li class="logoItem"><a href="https://www.linkedin.com/in/mark-ioannidis-64b97230">
 				<img src="social_icons/in_fp.png">
 			</a></li>
 		</ul>
@@ -72,7 +72,7 @@
 
 <div id ="pane3">
 
-	<h1 class = "setext"> Technical Support Specialist at</h1>
+	<h1 class = "setext"> Software Development Engineer at</h1>
 
 <div id = "map">
 
@@ -83,11 +83,22 @@
 
 </div>
 <footer>
-  <p>&copy; 2017 Mark Ioannidis (cc B. Stone)</p>
+  <p>&copy; 2018 Mark Ioannidis</p>
 </footer>
 </div>
 
-
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementsByClassName("topNav")[0].style.top = "0";
+  } else {
+    document.getElementsByClassName("topNav")[0].style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 
 </body>
 
